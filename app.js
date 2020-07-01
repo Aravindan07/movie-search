@@ -27,6 +27,6 @@ app.get("", (req, res) => {
   res.render("search");
 });
 
-app.listen("8080", () => {
+app.listen(process.env.PORT, () => {
   console.log("Server is running at port 8080");
 });
